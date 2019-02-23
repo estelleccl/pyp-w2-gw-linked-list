@@ -7,7 +7,7 @@ class LinkedList(AbstractLinkedList):
     """
 
     def __init__(self, elements=None):
-        pass
+        self.elements = elements
 
     def __str__(self):
         pass
@@ -28,7 +28,10 @@ class LinkedList(AbstractLinkedList):
         pass
 
     def __eq__(self, other):
-        pass
+        return self.elements == other.elements
+
+    def __ne__(self, other):
+        return self.elements != other.elements
 
     def append(self, elem):
         pass
